@@ -6,7 +6,7 @@
             <div class="b-title gsap-subtitle font-bold"><span>Web</span> <span>Developer</span> <span>|</span> <span>Web</span> <span>Designer<span> </div>
 
             <!-- <div class="gsap-container"> -->
-            <h1 class="font-bold gsap-title"><span>Let's</span> <span>create</span> <span>your</span> <span class="span-bg">success.</span></h1>
+            <h1 class="font-bold gsap-title"><span>Let's</span> <span>create</span> <span>your</span> <span>success.</span></h1>
             <!-- </div> -->
 
             <p class="font-thin gsap-description"><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, possimus quibusdam cupiditate </span> <span>vitae consequuntur architecto?</span></p>

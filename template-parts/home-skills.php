@@ -5,7 +5,7 @@
     <div class="container section-padding">
         <div class="row">
             <div class="col-lg-6">
-                <h3 class="b-title">What i do</h3>
+                <h3 class="b-title b-title-gsap"><span>What</span> <span>i</span> <span>do</span></h3>
                 <h2 class="font-extra-bold">Dry code and modern designs.</h2>
             </div>
             <div class="col-lg-6 col-text font-light">
