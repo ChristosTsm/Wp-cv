@@ -1,0 +1,25 @@
+@import "./general";
+
+.experience-wrapper {
+	margin-top: 50px;
+}
+
+.experience-item {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin: 50px 0;
+	h5 {
+		font-size: $font-m;
+	}
+}
+
+.time,
+.job-title {
+	font-size: $font-s;
+	// text-align: right;
+}
+
+.job-title {
+	color: $secondary-color;
+}

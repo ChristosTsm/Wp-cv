@@ -1,0 +1,32 @@
+.portfolio-item {
+	position: relative;
+}
+
+.portfolio-title {
+	position: absolute;
+	bottom: 10%;
+	right: -10%;
+	z-index: 3;
+	font-size: $font-l;
+}
+
+.portfolio-img {
+	max-width: 100%;
+	position: relative;
+	box-shadow: $shadow;
+}
+
+.portfolio-wrapper {
+	display: grid;
+	grid-template-columns: auto auto;
+	row-gap: 150px;
+	column-gap: 150px;
+}
+
+.categories {
+	display: flex;
+	p {
+		margin-right: 15px;
+		font-size: $font-s;
+	}
+}

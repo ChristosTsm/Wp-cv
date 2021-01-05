@@ -1,0 +1,52 @@
+@import "./general";
+
+.footer-wrapper {
+	background-color: $black;
+	padding: 50px 50px;
+	color: $white;
+}
+
+.footer-logo {
+	color: $white;
+	font-size: $font-l;
+	&:hover {
+		color: $white;
+	}
+}
+
+.footer-social-media {
+	a {
+		color: $white;
+		transition: 250ms;
+		margin-right: 50px;
+		&:hover {
+			color: $secondary-color;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+.footer-title {
+	font-size: $font-s;
+	color: $secondary-color;
+}
+
+.address {
+	font-size: $font-s;
+}
+
+.footer-ul {
+	li {
+		a {
+			font-size: $font-s;
+			color: $white;
+			transition: 250ms;
+
+			&:hover {
+				color: $secondary-color;
+			}
+		}
+	}
+}

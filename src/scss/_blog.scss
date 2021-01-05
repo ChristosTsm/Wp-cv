@@ -1,0 +1,13 @@
+@import "./general";
+
+.blog-wrapper {
+	display: flex;
+	gap: 100px;
+	margin-top: 50px;
+}
+
+.blog-item {
+	img {
+		width: 300px;
+	}
+}

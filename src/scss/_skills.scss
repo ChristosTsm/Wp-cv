@@ -1,0 +1,38 @@
+.section-image {
+	margin-left: 100px;
+	position: relative;
+	z-index: 2;
+	box-shadow: $shadow;
+}
+
+.skills-wrapper {
+	padding: 50px 0;
+}
+
+.col-text {
+	margin-top: 40px;
+
+	font-size: $font-s;
+}
+
+.skills-title {
+}
+
+.skills-ul {
+	li {
+		font-size: $font-s;
+		position: relative;
+		margin-left: 15px;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: -15px;
+			width: 10px;
+			transform: translateY(-50%);
+			height: 2px;
+			z-index: -1;
+			background: $secondary-color;
+		}
+	}
+}
