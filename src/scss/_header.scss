@@ -24,7 +24,7 @@ header {
 	.header-text {
 		// margin-top: 50px;
 		position: absolute;
-		top: 50%;
+		top: 30%;
 		width: 45%;
 		transform: translateY(-50%);
 		h1 {
@@ -73,7 +73,7 @@ nav {
 	}
 }
 
-svg {
+.svg-dots {
 	width: 35%;
 	position: absolute;
 	right: 12%;

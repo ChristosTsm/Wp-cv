@@ -21,3 +21,14 @@
 .job-title {
 	color: $secondary-color;
 }
+
+.svg-circle {
+	// g {
+	position: absolute;
+	opacity: 0.5;
+	z-index: -1;
+	left: -7%;
+	transform: rotate(45deg);
+	top: -20%;
+	// }
+}

@@ -1,7 +1,7 @@
-<header id="header">
+<header id="header" data-scroll-section>
     <?php get_template_part('template-parts/navbar'); ?>
     <div class="container">
-        <div class="col-lg-8 header-text">
+        <div class="col-lg-8 header-text" data-scroll data-scroll-speed="2">
 
             <div class="b-title gsap-subtitle font-bold"><span>Web</span> <span>Developer</span> <span>|</span> <span>Web</span> <span>Designer<span> </div>
 
@@ -24,5 +24,5 @@
         <a href="/">In</a>
     </div>
     <?php echo file_get_contents(get_template_directory_uri() . '/src/assets/dots.svg'); ?>
-    <p class="dots-text font-light">Designing and developing websites since 2018.</p>
+    <p data-scroll data-scroll-speed="3" class="dots-text font-light">Designing and developing websites since 2018.</p>
 </header>

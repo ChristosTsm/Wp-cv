@@ -1,11 +1,40 @@
+.blog-title {
+	@extend .portfolio-title;
+	left: -10%;
+}
+
 .blog-wrapper {
-	display: flex;
-	gap: 100px;
-	margin-top: 50px;
+	@extend .portfolio-wrapper;
 }
 
 .blog-item {
-	img {
-		width: 300px;
+	@extend .portfolio-item;
+}
+
+.blog-link {
+	@extend .portfolio-link;
+}
+
+.blog-img {
+	@extend .portfolio-img;
+}
+
+.category {
+	a {
+		color: $black;
+		font-size: $font-s;
+		text-transform: uppercase;
+	}
+}
+
+.post-categories {
+	display: flex;
+	li {
+		a {
+			color: $black;
+			text-transform: uppercase;
+			letter-spacing: 1.5px;
+			font-weight: 100;
+		}
 	}
 }

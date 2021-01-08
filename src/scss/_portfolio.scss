@@ -8,10 +8,13 @@
 	right: -10%;
 	z-index: 3;
 	font-size: $font-l;
+	transition: all ease-in-out 250ms;
 }
 
 .portfolio-img {
-	max-width: 100%;
+	width: 400px;
+	height: 700px;
+	object-fit: cover;
 	position: relative;
 	box-shadow: $shadow;
 }
@@ -21,6 +24,7 @@
 	grid-template-columns: auto auto;
 	row-gap: 150px;
 	column-gap: 150px;
+	margin-top: 50px;
 }
 
 .categories {
@@ -28,5 +32,28 @@
 	p {
 		margin-right: 15px;
 		font-size: $font-s;
+	}
+}
+
+.portfolio-link {
+	transition: all ease-in-out 250ms;
+
+	&:hover {
+		img {
+			transform: scale(1.02);
+		}
+		h4 {
+			font-size: $font-xl;
+			// box-shadow: $shadow;
+			text-shadow: $text-shadow;
+		}
+	}
+
+	img {
+		transition: all ease-in-out 250ms;
+	}
+
+	h4 {
+		color: $black;
 	}
 }

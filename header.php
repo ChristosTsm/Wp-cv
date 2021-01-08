@@ -9,7 +9,7 @@
 
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
-    <div class="body-wrapper">
+    <div class="body-wrapper" id="app">
         <!-- open body wrapper -->
         <div class="loader">
             <!-- <php echo file_get_contents(get_template_directory_uri() . '/src/assets/loading.svg'); ?> -->
@@ -17,4 +17,4 @@
             <?php get_template_part('template-parts/home', 'loading') ?>
         </div>
         <div class="loader-2"></div>
-        <!-- <div class="page-wrapper"> Locomotove JS Container -->
+        <div class="page-wrapper" data-scroll-container>

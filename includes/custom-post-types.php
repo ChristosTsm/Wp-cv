@@ -13,7 +13,7 @@ function tsm_portfolio_custom_post_type()
         'public' => true,
         'has_archive' => true,
         'show_in_rest' => true,
-        'supports' => array('title', 'editor', 'thumbnail', 'excerpt')
+        'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
     );
 
     register_post_type('projects', $args);

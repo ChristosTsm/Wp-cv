@@ -86,6 +86,9 @@ a {
   a:hover {
     text-decoration: none; }
 
+.gsap-div {
+  overflow: hidden; }
+
 .section-padding {
   padding-top: 250px; }
 
@@ -153,7 +156,7 @@ header {
   height: 90vh; }
   header .header-text {
     position: absolute;
-    top: 50%;
+    top: 30%;
     width: 45%;
     transform: translateY(-50%); }
     header .header-text h1 {
@@ -189,7 +192,7 @@ nav {
     width: 20%;
     border-width: 2px; }
 
-svg {
+.svg-dots {
   width: 35%;
   position: absolute;
   right: 12%;
@@ -266,26 +269,38 @@ svg {
 .job-title {
   color: #ff5757; }
 
-.portfolio-item {
+.svg-circle {
+  position: absolute;
+  opacity: 0.5;
+  z-index: -1;
+  left: -7%;
+  transform: rotate(45deg);
+  top: -20%; }
+
+.portfolio-item, .blog-item {
   position: relative; }
 
-.portfolio-title {
+.portfolio-title, .blog-title {
   position: absolute;
   bottom: 10%;
   right: -10%;
   z-index: 3;
-  font-size: 3em; }
+  font-size: 3em;
+  transition: all ease-in-out 250ms; }
 
-.portfolio-img {
-  max-width: 100%;
+.portfolio-img, .blog-img {
+  width: 400px;
+  height: 700px;
+  object-fit: cover;
   position: relative;
   box-shadow: 0px 0px 57px -21px rgba(0, 0, 0, 0.75); }
 
-.portfolio-wrapper {
+.portfolio-wrapper, .blog-wrapper {
   display: grid;
   grid-template-columns: auto auto;
   row-gap: 150px;
-  column-gap: 150px; }
+  column-gap: 150px;
+  margin-top: 50px; }
 
 .categories {
   display: flex; }
@@ -293,13 +308,33 @@ svg {
     margin-right: 15px;
     font-size: 1em; }
 
-.blog-wrapper {
-  display: flex;
-  gap: 100px;
-  margin-top: 50px; }
+.portfolio-link, .blog-link {
+  transition: all ease-in-out 250ms; }
+  .portfolio-link:hover img, .blog-link:hover img {
+    transform: scale(1.02); }
+  .portfolio-link:hover h4, .blog-link:hover h4 {
+    font-size: 4em;
+    text-shadow: 1px 12px 50px rgba(0, 0, 0, 0.31); }
+  .portfolio-link img, .blog-link img {
+    transition: all ease-in-out 250ms; }
+  .portfolio-link h4, .blog-link h4 {
+    color: #111; }
 
-.blog-item img {
-  width: 300px; }
+.blog-title {
+  left: -10%; }
+
+.category a {
+  color: #111;
+  font-size: 1em;
+  text-transform: uppercase; }
+
+.post-categories {
+  display: flex; }
+  .post-categories li a {
+    color: #111;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 100; }
 
 .footer-wrapper {
   background-color: #111;
@@ -308,7 +343,8 @@ svg {
 
 .footer-logo {
   color: #fff;
-  font-size: 3em; }
+  font-size: 3em;
+  line-height: 1; }
   .footer-logo:hover {
     color: #fff; }
 
